@@ -16,5 +16,10 @@ namespace Mohamed_Mahfouz_Inventory_System
         {
             InitializeComponent();
         }
+
+        private void modParts_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

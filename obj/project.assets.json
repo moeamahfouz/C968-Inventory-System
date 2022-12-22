@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akita\\source\\repos\\Mohamed Mahfouz Inventory System\\Mohamed Mahfouz Inventory System.csproj",
+      "projectUniqueName": "C:\\Users\\akita\\Source\\Repos\\C968-Inventory-System\\Mohamed Mahfouz Inventory System.csproj",
       "projectName": "Mohamed Mahfouz Inventory System",
-      "projectPath": "C:\\Users\\akita\\source\\repos\\Mohamed Mahfouz Inventory System\\Mohamed Mahfouz Inventory System.csproj",
+      "projectPath": "C:\\Users\\akita\\Source\\Repos\\C968-Inventory-System\\Mohamed Mahfouz Inventory System.csproj",
       "packagesPath": "C:\\Users\\akita\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akita\\source\\repos\\Mohamed Mahfouz Inventory System\\obj\\",
+      "outputPath": "C:\\Users\\akita\\Source\\Repos\\C968-Inventory-System\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

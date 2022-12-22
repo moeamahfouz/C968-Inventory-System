@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace Mohamed_Mahfouz_Inventory_System
 {
-    public partial class Add_Parts : Form
+    public partial class Add_Product : Form
     {
-        public Add_Parts()
+        public Add_Product()
         {
             InitializeComponent();
         }
 
-        private void Add_Parts_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void addPart_Name_Click(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }
