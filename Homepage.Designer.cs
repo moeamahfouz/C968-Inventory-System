@@ -39,10 +39,10 @@
             this.modProdHome = new System.Windows.Forms.Button();
             this.delProdHome = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.searchParts = new System.Windows.Forms.TextBox();
-            this.searchProducts = new System.Windows.Forms.TextBox();
+            this.searchParts = new System.Windows.Forms.Button();
+            this.searchProd = new System.Windows.Forms.Button();
+            this.searchPartsText = new System.Windows.Forms.TextBox();
+            this.searchProdText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.partsTable)).BeginInit();
@@ -59,7 +59,7 @@
             this.addPartsHome.TabIndex = 0;
             this.addPartsHome.Text = "Add";
             this.addPartsHome.UseVisualStyleBackColor = false;
-            this.addPartsHome.Click += new System.EventHandler(this.button1_Click);
+            this.addPartsHome.Click += new System.EventHandler(this.addPartsHome_Click);
             // 
             // partsTable
             // 
@@ -71,7 +71,7 @@
             this.partsTable.RowTemplate.Height = 41;
             this.partsTable.Size = new System.Drawing.Size(692, 266);
             this.partsTable.TabIndex = 3;
-            this.partsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.partsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.partsTable_CellContentClick);
             // 
             // prodTable
             // 
@@ -172,45 +172,45 @@
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
             // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(440, 112);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(67, 24);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "Search";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button9.Location = new System.Drawing.Point(1197, 112);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(67, 24);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "Search";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
             // searchParts
             // 
-            this.searchParts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchParts.Location = new System.Drawing.Point(519, 115);
+            this.searchParts.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.searchParts.Location = new System.Drawing.Point(440, 112);
             this.searchParts.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.searchParts.Name = "searchParts";
-            this.searchParts.Size = new System.Drawing.Size(243, 23);
-            this.searchParts.TabIndex = 15;
+            this.searchParts.Size = new System.Drawing.Size(67, 24);
+            this.searchParts.TabIndex = 13;
+            this.searchParts.Text = "Search";
+            this.searchParts.UseVisualStyleBackColor = false;
             // 
-            // searchProducts
+            // searchProd
             // 
-            this.searchProducts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.searchProducts.Location = new System.Drawing.Point(1275, 115);
-            this.searchProducts.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.searchProducts.Name = "searchProducts";
-            this.searchProducts.Size = new System.Drawing.Size(243, 23);
-            this.searchProducts.TabIndex = 16;
+            this.searchProd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.searchProd.Location = new System.Drawing.Point(1197, 112);
+            this.searchProd.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.searchProd.Name = "searchProd";
+            this.searchProd.Size = new System.Drawing.Size(67, 24);
+            this.searchProd.TabIndex = 14;
+            this.searchProd.Text = "Search";
+            this.searchProd.UseVisualStyleBackColor = false;
+            // 
+            // searchPartsText
+            // 
+            this.searchPartsText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.searchPartsText.Location = new System.Drawing.Point(519, 115);
+            this.searchPartsText.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.searchPartsText.Name = "searchPartsText";
+            this.searchPartsText.Size = new System.Drawing.Size(243, 23);
+            this.searchPartsText.TabIndex = 15;
+            // 
+            // searchProdText
+            // 
+            this.searchProdText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.searchProdText.Location = new System.Drawing.Point(1275, 115);
+            this.searchProdText.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.searchProdText.Name = "searchProdText";
+            this.searchProdText.Size = new System.Drawing.Size(243, 23);
+            this.searchProdText.TabIndex = 16;
             // 
             // label3
             // 
@@ -242,10 +242,10 @@
             this.ClientSize = new System.Drawing.Size(1584, 599);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.searchProducts);
+            this.Controls.Add(this.searchProdText);
+            this.Controls.Add(this.searchPartsText);
+            this.Controls.Add(this.searchProd);
             this.Controls.Add(this.searchParts);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.delProdHome);
             this.Controls.Add(this.modProdHome);
@@ -260,7 +260,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Homepage";
             this.Text = "Inventory Management System";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.partsTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodTable)).EndInit();
             this.ResumeLayout(false);
@@ -281,10 +281,10 @@
         private Button modProdHome;
         private Button delProdHome;
         private Button exit;
-        private Button button8;
-        private Button button9;
-        private TextBox searchParts;
-        private TextBox searchProducts;
+        private Button searchParts;
+        private Button searchProd;
+        private TextBox searchPartsText;
+        private TextBox searchProdText;
         private Label label3;
         private Label label4;
     }

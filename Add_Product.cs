@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Mohamed_Mahfouz_Inventory_System
 {
-    public partial class Add_Product : Form
+    public partial class AddProduct : Form
     {
-        public Add_Product()
+        public AddProduct()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Mohamed_Mahfouz_Inventory_System
 {
-    partial class Form1
+    partial class ModProduct
     {
         /// <summary>
         /// Required designer variable.
@@ -279,7 +279,7 @@
             this.modSearchButton.Text = "Search";
             this.modSearchButton.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // ModProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -307,7 +307,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "ModProduct";
             this.Text = "Inventory Management System";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.modCandPartsTable)).EndInit();

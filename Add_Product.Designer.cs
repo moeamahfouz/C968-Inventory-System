@@ -1,6 +1,6 @@
 ﻿namespace Mohamed_Mahfouz_Inventory_System
 {
-    partial class Add_Product
+    partial class AddProduct
     {
         /// <summary>
         /// Required designer variable.
@@ -280,7 +280,7 @@
             this.addProdSave.Text = "Save";
             this.addProdSave.UseVisualStyleBackColor = true;
             // 
-            // Add_Product
+            // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -308,7 +308,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Add_Product";
+            this.Name = "AddProduct";
             this.Text = "Inventory Management System";
             ((System.ComponentModel.ISupportInitialize)(this.addCandPartsTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addPartsAssocTable)).EndInit();
