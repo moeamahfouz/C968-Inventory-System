@@ -29,71 +29,71 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.mod_InHouse = new System.Windows.Forms.RadioButton();
-            this.mod_Outsourced = new System.Windows.Forms.RadioButton();
+            this.modInHouse = new System.Windows.Forms.RadioButton();
+            this.modOutsourced = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.modMachIDLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.modParts_ID = new System.Windows.Forms.TextBox();
-            this.modParts_Name = new System.Windows.Forms.TextBox();
-            this.modParts_Inv = new System.Windows.Forms.TextBox();
-            this.modParts_Price = new System.Windows.Forms.TextBox();
-            this.modParts_Min = new System.Windows.Forms.TextBox();
-            this.modParts_Max = new System.Windows.Forms.TextBox();
-            this.modParts_MachID = new System.Windows.Forms.TextBox();
-            this.modParts_Save = new System.Windows.Forms.Button();
-            this.modParts_Cancel = new System.Windows.Forms.Button();
+            this.modPartsID = new System.Windows.Forms.TextBox();
+            this.modPartsName = new System.Windows.Forms.TextBox();
+            this.modPartsInv = new System.Windows.Forms.TextBox();
+            this.modPartsPrice = new System.Windows.Forms.TextBox();
+            this.modPartsMin = new System.Windows.Forms.TextBox();
+            this.modPartsMax = new System.Windows.Forms.TextBox();
+            this.modPartsMachID = new System.Windows.Forms.TextBox();
+            this.modPartsSave = new System.Windows.Forms.Button();
+            this.modPartsCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(11, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(20, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 21);
+            this.label1.Size = new System.Drawing.Size(215, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "Modify Parts";
             // 
-            // mod_InHouse
+            // modInHouse
             // 
-            this.mod_InHouse.AutoSize = true;
-            this.mod_InHouse.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mod_InHouse.Location = new System.Drawing.Point(179, 10);
-            this.mod_InHouse.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.mod_InHouse.Name = "mod_InHouse";
-            this.mod_InHouse.Size = new System.Drawing.Size(84, 23);
-            this.mod_InHouse.TabIndex = 2;
-            this.mod_InHouse.TabStop = true;
-            this.mod_InHouse.Text = "In-House";
-            this.mod_InHouse.UseVisualStyleBackColor = true;
+            this.modInHouse.AutoSize = true;
+            this.modInHouse.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.modInHouse.Location = new System.Drawing.Point(332, 21);
+            this.modInHouse.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.modInHouse.Name = "modInHouse";
+            this.modInHouse.Size = new System.Drawing.Size(156, 41);
+            this.modInHouse.TabIndex = 2;
+            this.modInHouse.TabStop = true;
+            this.modInHouse.Text = "In-House";
+            this.modInHouse.UseVisualStyleBackColor = true;
             // 
-            // mod_Outsourced
+            // modOutsourced
             // 
-            this.mod_Outsourced.AutoSize = true;
-            this.mod_Outsourced.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mod_Outsourced.Location = new System.Drawing.Point(311, 10);
-            this.mod_Outsourced.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.mod_Outsourced.Name = "mod_Outsourced";
-            this.mod_Outsourced.Size = new System.Drawing.Size(99, 23);
-            this.mod_Outsourced.TabIndex = 3;
-            this.mod_Outsourced.TabStop = true;
-            this.mod_Outsourced.Text = "Outsourced";
-            this.mod_Outsourced.UseVisualStyleBackColor = true;
+            this.modOutsourced.AutoSize = true;
+            this.modOutsourced.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.modOutsourced.Location = new System.Drawing.Point(578, 21);
+            this.modOutsourced.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.modOutsourced.Name = "modOutsourced";
+            this.modOutsourced.Size = new System.Drawing.Size(185, 41);
+            this.modOutsourced.TabIndex = 3;
+            this.modOutsourced.TabStop = true;
+            this.modOutsourced.Text = "Outsourced";
+            this.modOutsourced.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(116, 87);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(215, 186);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 19);
+            this.label2.Size = new System.Drawing.Size(43, 37);
             this.label2.TabIndex = 4;
             this.label2.Text = "ID";
             // 
@@ -101,10 +101,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(94, 121);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(175, 258);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 19);
+            this.label3.Size = new System.Drawing.Size(88, 37);
             this.label3.TabIndex = 5;
             this.label3.Text = "Name";
             // 
@@ -112,10 +112,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(71, 158);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(132, 337);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 19);
+            this.label4.Size = new System.Drawing.Size(128, 37);
             this.label4.TabIndex = 6;
             this.label4.Text = "Inventory";
             // 
@@ -123,10 +123,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(60, 203);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(111, 433);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 19);
+            this.label5.Size = new System.Drawing.Size(152, 37);
             this.label5.TabIndex = 7;
             this.label5.Text = "Price / Cost";
             // 
@@ -134,138 +134,144 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(106, 245);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(197, 523);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 19);
+            this.label6.Size = new System.Drawing.Size(63, 37);
             this.label6.TabIndex = 8;
             this.label6.Text = "Min";
             // 
-            // label8
+            // modMachIDLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(60, 285);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 19);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Machine ID";
+            this.modMachIDLabel.AutoSize = true;
+            this.modMachIDLabel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.modMachIDLabel.Location = new System.Drawing.Point(111, 608);
+            this.modMachIDLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.modMachIDLabel.Name = "modMachIDLabel";
+            this.modMachIDLabel.Size = new System.Drawing.Size(151, 37);
+            this.modMachIDLabel.TabIndex = 10;
+            this.modMachIDLabel.Text = "Machine ID";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(262, 245);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(487, 523);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 19);
+            this.label7.Size = new System.Drawing.Size(67, 37);
             this.label7.TabIndex = 11;
             this.label7.Text = "Max";
             // 
-            // modParts_ID
+            // modPartsID
             // 
-            this.modParts_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modParts_ID.Location = new System.Drawing.Point(163, 87);
-            this.modParts_ID.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.modParts_ID.Name = "modParts_ID";
-            this.modParts_ID.Size = new System.Drawing.Size(110, 23);
-            this.modParts_ID.TabIndex = 14;
+            this.modPartsID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modPartsID.Location = new System.Drawing.Point(303, 186);
+            this.modPartsID.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.modPartsID.Name = "modPartsID";
+            this.modPartsID.Size = new System.Drawing.Size(203, 39);
+            this.modPartsID.TabIndex = 14;
             // 
-            // modParts_Name
+            // modPartsName
             // 
-            this.modParts_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modParts_Name.Location = new System.Drawing.Point(163, 121);
-            this.modParts_Name.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.modParts_Name.Name = "modParts_Name";
-            this.modParts_Name.Size = new System.Drawing.Size(110, 23);
-            this.modParts_Name.TabIndex = 15;
+            this.modPartsName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modPartsName.Location = new System.Drawing.Point(303, 258);
+            this.modPartsName.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.modPartsName.Name = "modPartsName";
+            this.modPartsName.Size = new System.Drawing.Size(203, 39);
+            this.modPartsName.TabIndex = 15;
             // 
-            // modParts_Inv
+            // modPartsInv
             // 
-            this.modParts_Inv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modParts_Inv.Location = new System.Drawing.Point(163, 158);
-            this.modParts_Inv.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.modParts_Inv.Name = "modParts_Inv";
-            this.modParts_Inv.Size = new System.Drawing.Size(110, 23);
-            this.modParts_Inv.TabIndex = 16;
+            this.modPartsInv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modPartsInv.Location = new System.Drawing.Point(303, 337);
+            this.modPartsInv.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.modPartsInv.Name = "modPartsInv";
+            this.modPartsInv.Size = new System.Drawing.Size(203, 39);
+            this.modPartsInv.TabIndex = 16;
             // 
-            // modParts_Price
+            // modPartsPrice
             // 
-            this.modParts_Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modParts_Price.Location = new System.Drawing.Point(163, 203);
-            this.modParts_Price.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.modParts_Price.Name = "modParts_Price";
-            this.modParts_Price.Size = new System.Drawing.Size(110, 23);
-            this.modParts_Price.TabIndex = 17;
+            this.modPartsPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modPartsPrice.Location = new System.Drawing.Point(303, 433);
+            this.modPartsPrice.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.modPartsPrice.Name = "modPartsPrice";
+            this.modPartsPrice.Size = new System.Drawing.Size(203, 39);
+            this.modPartsPrice.TabIndex = 17;
             // 
-            // modParts_Min
+            // modPartsMin
             // 
-            this.modParts_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modParts_Min.Location = new System.Drawing.Point(163, 245);
-            this.modParts_Min.Name = "modParts_Min";
-            this.modParts_Min.Size = new System.Drawing.Size(72, 23);
-            this.modParts_Min.TabIndex = 18;
+            this.modPartsMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modPartsMin.Location = new System.Drawing.Point(303, 523);
+            this.modPartsMin.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.modPartsMin.Name = "modPartsMin";
+            this.modPartsMin.Size = new System.Drawing.Size(132, 39);
+            this.modPartsMin.TabIndex = 18;
             // 
-            // modParts_Max
+            // modPartsMax
             // 
-            this.modParts_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modParts_Max.Location = new System.Drawing.Point(311, 245);
-            this.modParts_Max.Name = "modParts_Max";
-            this.modParts_Max.Size = new System.Drawing.Size(72, 23);
-            this.modParts_Max.TabIndex = 19;
+            this.modPartsMax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modPartsMax.Location = new System.Drawing.Point(578, 523);
+            this.modPartsMax.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.modPartsMax.Name = "modPartsMax";
+            this.modPartsMax.Size = new System.Drawing.Size(132, 39);
+            this.modPartsMax.TabIndex = 19;
             // 
-            // modParts_MachID
+            // modPartsMachID
             // 
-            this.modParts_MachID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modParts_MachID.Location = new System.Drawing.Point(163, 285);
-            this.modParts_MachID.Name = "modParts_MachID";
-            this.modParts_MachID.Size = new System.Drawing.Size(110, 23);
-            this.modParts_MachID.TabIndex = 20;
+            this.modPartsMachID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modPartsMachID.Location = new System.Drawing.Point(303, 608);
+            this.modPartsMachID.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.modPartsMachID.Name = "modPartsMachID";
+            this.modPartsMachID.Size = new System.Drawing.Size(203, 39);
+            this.modPartsMachID.TabIndex = 20;
             // 
-            // modParts_Save
+            // modPartsSave
             // 
-            this.modParts_Save.BackColor = System.Drawing.SystemColors.Control;
-            this.modParts_Save.Location = new System.Drawing.Point(286, 337);
-            this.modParts_Save.Name = "modParts_Save";
-            this.modParts_Save.Size = new System.Drawing.Size(66, 36);
-            this.modParts_Save.TabIndex = 21;
-            this.modParts_Save.Text = "Save";
-            this.modParts_Save.UseVisualStyleBackColor = false;
+            this.modPartsSave.BackColor = System.Drawing.SystemColors.Control;
+            this.modPartsSave.Location = new System.Drawing.Point(531, 719);
+            this.modPartsSave.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.modPartsSave.Name = "modPartsSave";
+            this.modPartsSave.Size = new System.Drawing.Size(123, 77);
+            this.modPartsSave.TabIndex = 21;
+            this.modPartsSave.Text = "Save";
+            this.modPartsSave.UseVisualStyleBackColor = false;
             // 
-            // modParts_Cancel
+            // modPartsCancel
             // 
-            this.modParts_Cancel.Location = new System.Drawing.Point(372, 337);
-            this.modParts_Cancel.Name = "modParts_Cancel";
-            this.modParts_Cancel.Size = new System.Drawing.Size(66, 36);
-            this.modParts_Cancel.TabIndex = 22;
-            this.modParts_Cancel.Text = "Cancel";
-            this.modParts_Cancel.UseVisualStyleBackColor = true;
+            this.modPartsCancel.Location = new System.Drawing.Point(691, 719);
+            this.modPartsCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.modPartsCancel.Name = "modPartsCancel";
+            this.modPartsCancel.Size = new System.Drawing.Size(123, 77);
+            this.modPartsCancel.TabIndex = 22;
+            this.modPartsCancel.Text = "Cancel";
+            this.modPartsCancel.UseVisualStyleBackColor = true;
             // 
             // modParts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 385);
-            this.Controls.Add(this.modParts_Cancel);
-            this.Controls.Add(this.modParts_Save);
-            this.Controls.Add(this.modParts_MachID);
-            this.Controls.Add(this.modParts_Max);
-            this.Controls.Add(this.modParts_Min);
-            this.Controls.Add(this.modParts_Price);
-            this.Controls.Add(this.modParts_Inv);
-            this.Controls.Add(this.modParts_Name);
-            this.Controls.Add(this.modParts_ID);
+            this.ClientSize = new System.Drawing.Size(891, 821);
+            this.Controls.Add(this.modPartsCancel);
+            this.Controls.Add(this.modPartsSave);
+            this.Controls.Add(this.modPartsMachID);
+            this.Controls.Add(this.modPartsMax);
+            this.Controls.Add(this.modPartsMin);
+            this.Controls.Add(this.modPartsPrice);
+            this.Controls.Add(this.modPartsInv);
+            this.Controls.Add(this.modPartsName);
+            this.Controls.Add(this.modPartsID);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.modMachIDLabel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.mod_Outsourced);
-            this.Controls.Add(this.mod_InHouse);
+            this.Controls.Add(this.modOutsourced);
+            this.Controls.Add(this.modInHouse);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "modParts";
             this.Text = "Inventory Management System";
             this.Load += new System.EventHandler(this.modParts_Load);
@@ -277,23 +283,23 @@
         #endregion
 
         private Label label1;
-        private RadioButton mod_InHouse;
-        private RadioButton mod_Outsourced;
+        private RadioButton modInHouse;
+        private RadioButton modOutsourced;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label label8;
+        private Label modMachIDLabel;
         private Label label7;
-        private TextBox modParts_ID;
-        private TextBox modParts_Name;
-        private TextBox modParts_Inv;
-        private TextBox modParts_Price;
-        private TextBox modParts_Min;
-        private TextBox modParts_Max;
-        private TextBox modParts_MachID;
-        private Button modParts_Save;
-        private Button modParts_Cancel;
+        private TextBox modPartsID;
+        private TextBox modPartsName;
+        private TextBox modPartsInv;
+        private TextBox modPartsPrice;
+        private TextBox modPartsMin;
+        private TextBox modPartsMax;
+        private TextBox modPartsMachID;
+        private Button modPartsSave;
+        private Button modPartsCancel;
     }
 }
