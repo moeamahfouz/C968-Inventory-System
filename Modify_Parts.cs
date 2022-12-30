@@ -14,7 +14,7 @@ namespace Mohamed_Mahfouz_Inventory_System
     public partial class modParts : Form
     {
     {
-        Homepage mainScreen = (Homepage)Application.OpenForms["Homepage"];
+        Homepage homePage = (Homepage)Application.OpenForms["Homepage"];
 
         public modParts(InHouse inHousePart) //Sets values to public variables to be set to data grid if in house part
         {

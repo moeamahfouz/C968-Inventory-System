@@ -35,12 +35,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.addProduct_ID = new System.Windows.Forms.TextBox();
-            this.addProduct_Name = new System.Windows.Forms.TextBox();
-            this.addProduct_Inv = new System.Windows.Forms.TextBox();
-            this.addProduct_Price = new System.Windows.Forms.TextBox();
-            this.addProduct_Min = new System.Windows.Forms.TextBox();
-            this.addProduct_Max = new System.Windows.Forms.TextBox();
+            this.addProductID = new System.Windows.Forms.TextBox();
+            this.addProductName = new System.Windows.Forms.TextBox();
+            this.addProductInv = new System.Windows.Forms.TextBox();
+            this.addProductPrice = new System.Windows.Forms.TextBox();
+            this.addProductMin = new System.Windows.Forms.TextBox();
+            this.addProductMax = new System.Windows.Forms.TextBox();
             this.addCandPartsTable = new System.Windows.Forms.DataGridView();
             this.addPartsAssocTable = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
@@ -133,57 +133,57 @@
             this.label7.Text = "Max";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // addProduct_ID
+            // addProductID
             // 
-            this.addProduct_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addProduct_ID.Location = new System.Drawing.Point(98, 120);
-            this.addProduct_ID.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.addProduct_ID.Name = "addProduct_ID";
-            this.addProduct_ID.Size = new System.Drawing.Size(110, 23);
-            this.addProduct_ID.TabIndex = 23;
+            this.addProductID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addProductID.Location = new System.Drawing.Point(98, 120);
+            this.addProductID.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.addProductID.Name = "addProductID";
+            this.addProductID.Size = new System.Drawing.Size(110, 23);
+            this.addProductID.TabIndex = 23;
             // 
-            // addProduct_Name
+            // addProductName
             // 
-            this.addProduct_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addProduct_Name.Location = new System.Drawing.Point(98, 161);
-            this.addProduct_Name.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.addProduct_Name.Name = "addProduct_Name";
-            this.addProduct_Name.Size = new System.Drawing.Size(110, 23);
-            this.addProduct_Name.TabIndex = 24;
+            this.addProductName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addProductName.Location = new System.Drawing.Point(98, 161);
+            this.addProductName.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.addProductName.Name = "addProductName";
+            this.addProductName.Size = new System.Drawing.Size(110, 23);
+            this.addProductName.TabIndex = 24;
             // 
-            // addProduct_Inv
+            // addProductInv
             // 
-            this.addProduct_Inv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addProduct_Inv.Location = new System.Drawing.Point(98, 208);
-            this.addProduct_Inv.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.addProduct_Inv.Name = "addProduct_Inv";
-            this.addProduct_Inv.Size = new System.Drawing.Size(110, 23);
-            this.addProduct_Inv.TabIndex = 25;
+            this.addProductInv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addProductInv.Location = new System.Drawing.Point(98, 208);
+            this.addProductInv.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.addProductInv.Name = "addProductInv";
+            this.addProductInv.Size = new System.Drawing.Size(110, 23);
+            this.addProductInv.TabIndex = 25;
             // 
-            // addProduct_Price
+            // addProductPrice
             // 
-            this.addProduct_Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addProduct_Price.Location = new System.Drawing.Point(98, 252);
-            this.addProduct_Price.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.addProduct_Price.Name = "addProduct_Price";
-            this.addProduct_Price.Size = new System.Drawing.Size(110, 23);
-            this.addProduct_Price.TabIndex = 26;
+            this.addProductPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addProductPrice.Location = new System.Drawing.Point(98, 252);
+            this.addProductPrice.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.addProductPrice.Name = "addProductPrice";
+            this.addProductPrice.Size = new System.Drawing.Size(110, 23);
+            this.addProductPrice.TabIndex = 26;
             // 
-            // addProduct_Min
+            // addProductMin
             // 
-            this.addProduct_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addProduct_Min.Location = new System.Drawing.Point(69, 298);
-            this.addProduct_Min.Name = "addProduct_Min";
-            this.addProduct_Min.Size = new System.Drawing.Size(72, 23);
-            this.addProduct_Min.TabIndex = 27;
+            this.addProductMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addProductMin.Location = new System.Drawing.Point(69, 298);
+            this.addProductMin.Name = "addProductMin";
+            this.addProductMin.Size = new System.Drawing.Size(72, 23);
+            this.addProductMin.TabIndex = 27;
             // 
-            // addProduct_Max
+            // addProductMax
             // 
-            this.addProduct_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addProduct_Max.Location = new System.Drawing.Point(239, 298);
-            this.addProduct_Max.Name = "addProduct_Max";
-            this.addProduct_Max.Size = new System.Drawing.Size(72, 23);
-            this.addProduct_Max.TabIndex = 28;
+            this.addProductMax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addProductMax.Location = new System.Drawing.Point(239, 298);
+            this.addProductMax.Name = "addProductMax";
+            this.addProductMax.Size = new System.Drawing.Size(72, 23);
+            this.addProductMax.TabIndex = 28;
             // 
             // addCandPartsTable
             // 
@@ -295,12 +295,12 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.addPartsAssocTable);
             this.Controls.Add(this.addCandPartsTable);
-            this.Controls.Add(this.addProduct_Max);
-            this.Controls.Add(this.addProduct_Min);
-            this.Controls.Add(this.addProduct_Price);
-            this.Controls.Add(this.addProduct_Inv);
-            this.Controls.Add(this.addProduct_Name);
-            this.Controls.Add(this.addProduct_ID);
+            this.Controls.Add(this.addProductMax);
+            this.Controls.Add(this.addProductMin);
+            this.Controls.Add(this.addProductPrice);
+            this.Controls.Add(this.addProductInv);
+            this.Controls.Add(this.addProductName);
+            this.Controls.Add(this.addProductID);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -326,12 +326,12 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox addProduct_ID;
-        private TextBox addProduct_Name;
-        private TextBox addProduct_Inv;
-        private TextBox addProduct_Price;
-        private TextBox addProduct_Min;
-        private TextBox addProduct_Max;
+        private TextBox addProductID;
+        private TextBox addProductName;
+        private TextBox addProductInv;
+        private TextBox addProductPrice;
+        private TextBox addProductMin;
+        private TextBox addProductMax;
         private DataGridView addCandPartsTable;
         private DataGridView addPartsAssocTable;
         private Label label8;

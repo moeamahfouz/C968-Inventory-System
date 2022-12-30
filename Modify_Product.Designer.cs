@@ -35,12 +35,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.modProduct_ID = new System.Windows.Forms.TextBox();
-            this.modProduct_Name = new System.Windows.Forms.TextBox();
-            this.modProduct_Inv = new System.Windows.Forms.TextBox();
-            this.modProduct_Price = new System.Windows.Forms.TextBox();
-            this.modProduct_Min = new System.Windows.Forms.TextBox();
-            this.modProduct_Max = new System.Windows.Forms.TextBox();
+            this.modProductID = new System.Windows.Forms.TextBox();
+            this.modProductName = new System.Windows.Forms.TextBox();
+            this.modProductInv = new System.Windows.Forms.TextBox();
+            this.modProductPrice = new System.Windows.Forms.TextBox();
+            this.modProductMin = new System.Windows.Forms.TextBox();
+            this.modProductMax = new System.Windows.Forms.TextBox();
             this.modCandPartsTable = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.modCandPartsAdd = new System.Windows.Forms.Button();
@@ -132,57 +132,57 @@
             this.label7.TabIndex = 26;
             this.label7.Text = "Max";
             // 
-            // modProduct_ID
+            // modProductID
             // 
-            this.modProduct_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modProduct_ID.Location = new System.Drawing.Point(107, 118);
-            this.modProduct_ID.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.modProduct_ID.Name = "modProduct_ID";
-            this.modProduct_ID.Size = new System.Drawing.Size(110, 23);
-            this.modProduct_ID.TabIndex = 27;
+            this.modProductID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modProductID.Location = new System.Drawing.Point(107, 118);
+            this.modProductID.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.modProductID.Name = "modProductID";
+            this.modProductID.Size = new System.Drawing.Size(110, 23);
+            this.modProductID.TabIndex = 27;
             // 
-            // modProduct_Name
+            // modProductName
             // 
-            this.modProduct_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modProduct_Name.Location = new System.Drawing.Point(107, 157);
-            this.modProduct_Name.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.modProduct_Name.Name = "modProduct_Name";
-            this.modProduct_Name.Size = new System.Drawing.Size(110, 23);
-            this.modProduct_Name.TabIndex = 28;
+            this.modProductName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modProductName.Location = new System.Drawing.Point(107, 157);
+            this.modProductName.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.modProductName.Name = "modProductName";
+            this.modProductName.Size = new System.Drawing.Size(110, 23);
+            this.modProductName.TabIndex = 28;
             // 
-            // modProduct_Inv
+            // modProductInv
             // 
-            this.modProduct_Inv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modProduct_Inv.Location = new System.Drawing.Point(107, 199);
-            this.modProduct_Inv.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.modProduct_Inv.Name = "modProduct_Inv";
-            this.modProduct_Inv.Size = new System.Drawing.Size(110, 23);
-            this.modProduct_Inv.TabIndex = 29;
+            this.modProductInv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modProductInv.Location = new System.Drawing.Point(107, 199);
+            this.modProductInv.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.modProductInv.Name = "modProductInv";
+            this.modProductInv.Size = new System.Drawing.Size(110, 23);
+            this.modProductInv.TabIndex = 29;
             // 
-            // modProduct_Price
+            // modProductPrice
             // 
-            this.modProduct_Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modProduct_Price.Location = new System.Drawing.Point(107, 247);
-            this.modProduct_Price.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.modProduct_Price.Name = "modProduct_Price";
-            this.modProduct_Price.Size = new System.Drawing.Size(110, 23);
-            this.modProduct_Price.TabIndex = 30;
+            this.modProductPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modProductPrice.Location = new System.Drawing.Point(107, 247);
+            this.modProductPrice.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.modProductPrice.Name = "modProductPrice";
+            this.modProductPrice.Size = new System.Drawing.Size(110, 23);
+            this.modProductPrice.TabIndex = 30;
             // 
-            // modProduct_Min
+            // modProductMin
             // 
-            this.modProduct_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modProduct_Min.Location = new System.Drawing.Point(63, 296);
-            this.modProduct_Min.Name = "modProduct_Min";
-            this.modProduct_Min.Size = new System.Drawing.Size(72, 23);
-            this.modProduct_Min.TabIndex = 31;
+            this.modProductMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modProductMin.Location = new System.Drawing.Point(63, 296);
+            this.modProductMin.Name = "modProductMin";
+            this.modProductMin.Size = new System.Drawing.Size(72, 23);
+            this.modProductMin.TabIndex = 31;
             // 
-            // modProduct_Max
+            // modProductMax
             // 
-            this.modProduct_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modProduct_Max.Location = new System.Drawing.Point(242, 296);
-            this.modProduct_Max.Name = "modProduct_Max";
-            this.modProduct_Max.Size = new System.Drawing.Size(72, 23);
-            this.modProduct_Max.TabIndex = 32;
+            this.modProductMax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.modProductMax.Location = new System.Drawing.Point(242, 296);
+            this.modProductMax.Name = "modProductMax";
+            this.modProductMax.Size = new System.Drawing.Size(72, 23);
+            this.modProductMax.TabIndex = 32;
             // 
             // modCandPartsTable
             // 
@@ -294,12 +294,12 @@
             this.Controls.Add(this.modCandPartsAdd);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.modCandPartsTable);
-            this.Controls.Add(this.modProduct_Max);
-            this.Controls.Add(this.modProduct_Min);
-            this.Controls.Add(this.modProduct_Price);
-            this.Controls.Add(this.modProduct_Inv);
-            this.Controls.Add(this.modProduct_Name);
-            this.Controls.Add(this.modProduct_ID);
+            this.Controls.Add(this.modProductMax);
+            this.Controls.Add(this.modProductMin);
+            this.Controls.Add(this.modProductPrice);
+            this.Controls.Add(this.modProductInv);
+            this.Controls.Add(this.modProductName);
+            this.Controls.Add(this.modProductID);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -326,12 +326,12 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox modProduct_ID;
-        private TextBox modProduct_Name;
-        private TextBox modProduct_Inv;
-        private TextBox modProduct_Price;
-        private TextBox modProduct_Min;
-        private TextBox modProduct_Max;
+        private TextBox modProductID;
+        private TextBox modProductName;
+        private TextBox modProductInv;
+        private TextBox modProductPrice;
+        private TextBox modProductMin;
+        private TextBox modProductMax;
         private DataGridView modCandPartsTable;
         private Label label8;
         private Button modCandPartsAdd;
