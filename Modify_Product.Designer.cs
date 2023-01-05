@@ -342,5 +342,41 @@
         private Label label9;
         private TextBox modProdSearch;
         private Button modSearchButton;
+
+        public int modProdIDBox
+        {
+            get { return int.Parse(modProductID.Text); }
+            set { modProductID.Text = value.ToString(); }
+        }
+
+        public string modProdNameBox
+        {
+            get { return modProductName.Text; }
+            set { modProductName.Text = value; }
+        }
+
+        public int modProdInvBox
+        {
+            get { return int.Parse(modProductInv.Text); }
+            set { modProductInv.Text = value.ToString(); }
+        }
+
+        public decimal modProdPriceBox
+        {
+            get { return decimal.Parse(modProductPrice.Text); }
+            set { modProductPrice.Text = value.ToString(); }
+        }
+
+        public int modProdMinBox
+        {
+            get { return int.Parse(modProductMin.Text); }
+            set { modProductMin.Text = value.ToString(); }
+        }
+
+        public int modProdMaxBox
+        {
+            get { return int.Parse(modProductMax.Text); }
+            set { modProductMax.Text = value.ToString(); }
+        }
     }
 }

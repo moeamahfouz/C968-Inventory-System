@@ -13,33 +13,33 @@ namespace Mohamed_Mahfouz_Inventory_System
 {
     public partial class modParts : Form
     {
-    {
-        Homepage homePage = (Homepage)Application.OpenForms["Homepage"];
+    
+        Homepage homePage = (Homepage) Application.OpenForms["Homepage"];
 
-        public modParts(InHouse inHousePart) //Sets values to public variables to be set to data grid if in house part
+        public modParts(InHouse inHousePart) //Sets values to public variables to be set to table for in house parts
         {
             InitializeComponent();
 
-            modPartsID = inHousePart.partID;
-            modPartsName = inHousePart.partName;
-            modPartsInv = inHousePart.partInv;
-            modPartsPrice = Decimal.Parse(inHousePart.partPrice.Substring(1));
-            modPartsMin = inHousePart.partMin;
-            modPartsMax = inHousePart.partMax;
-            modPartsMachID = inHousePart.machineID.ToString();
+            modPartsIDBox = inHousePart.partID;
+            modPartsNameBox = inHousePart.partName;
+            modPartsInvBox = inHousePart.partInv;
+            modPartsPriceBox = Decimal.Parse(inHousePart.partPrice.Substring(1));
+            modPartsMinBox = inHousePart.partMin;
+            modPartsMaxBox = inHousePart.partMax;
+            modPartsMachIDBox = inHousePart.machineID.ToString();
         }
 
         public modParts(Outsourced outsourcedPart) //Sets values to public variables to be set to data grid if outsourced part
         {
             InitializeComponent();
 
-            modPartsID = outsourcedPart.partID;
-            modPartsName = outsourcedPart.partName;
-            modPartsInv = outsourcedPart.partInv;
-            modPartsPrice = Decimal.Parse(outsourcedPart.partPrice.Substring(1));
-            modPartsMin = outsourcedPart.partMin;
-            modPartsMax = outsourcedPart.partMax;
-            modPartsMachID = outsourcedPart.compName;
+            modPartsIDBox = outsourcedPart.partID;
+            modPartsNameBox = outsourcedPart.partName;
+            modPartsInvBox = outsourcedPart.partInv;
+            modPartsPriceBox = Decimal.Parse(outsourcedPart.partPrice.Substring(1));
+            modPartsMinBox = outsourcedPart.partMin;
+            modPartsMaxBox = outsourcedPart.partMax;
+            modPartsMachIDBox = outsourcedPart.compName;
 
             modOutsourced.Checked = true;
         }
@@ -51,33 +51,33 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void SaveModPart_Click(object sender, EventArgs e) //Save function checks for errors from user input into inventory fields
         {
-            if (modPartsMax < modPartsMin)
+            if (modPartsMaxBox < modPartsMinBox)
             {
                 MessageBox.Show(" Maximum field must contain higher value than minimum field.");
                 return;
             }
 
-            if ((modPartsInv < modPartsMin) || (modPartsInv > modPartsMax))
+            if ((modPartsMaxBox < modPartsMinBox) || (modPartsInvBox > modPartsMaxBox))
             {
                 MessageBox.Show(" Inventory field must contain value between minimum parts and maximum parts.");
             }
 
             if (modInHouse.Checked)
             {
-                InHouse inHousePart = new InHouse(modPartsID, modPartsName, modPartsInv, modPartsPrice, modPartsMin, modPartsMax, int.Parse(modPartsMachID));
-                Inventory.UpdateInhousePart(modPartsID, inHousePart);
+                InHouse inHousePart = new InHouse(modPartsIDBox, modPartsNameBox, modPartsInvBox, modPartsPriceBox, modPartsMinBox, modPartsMaxBox, int.Parse(modPartsMachIDBox));
+                Inventory.UpdateInhousePart(modPartsIDBox, inHousePart);
                 modInHouse.Checked = true;
             }
             else
             {
-                Outsourced outSourcedPart = new Outsourced(modPartsID, modPartsName, modPartsInv, modPartsPrice, modPartsMin, modPartsMax, modPartsMachID);
-                Inventory.UpdateOutsourcedPart(modPartsID, outSourcedPart);
+                Outsourced outSourcedPart = new Outsourced(modPartsIDBox, modPartsNameBox, modPartsInvBox, modPartsPriceBox, modPartsMinBox, modPartsMaxBox, modPartsMachIDBox);
+                Inventory.UpdateOutsourcedPart(modPartsIDBox, outSourcedPart);
                 modOutsourced.Checked = true;
             }
             this.Close();
 
-            mainScreen.partsTable.Update();
-            mainScreen.partsTable.Refresh();
+            homePage.partsTable.Update();
+            homePage.partsTable.Refresh();
         }
 
         private void modInHouse_CheckedChanged(object sender, EventArgs e) //Changes label to Machine ID if inhouse button is checked

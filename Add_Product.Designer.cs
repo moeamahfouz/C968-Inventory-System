@@ -342,5 +342,41 @@
         private Button addSearchButton;
         private Button addProdCancel;
         private Button addProdSave;
+
+        public int addProdIDBox
+        {
+            get { return int.Parse(addProductID.Text); }
+            set { addProductID.Text = value.ToString(); }
+        }
+
+        public string addProdNameBox
+        {
+            get { return addProductName.Text; }
+            set { addProductName.Text = value; }
+        }
+
+        public int addProdInvBox
+        {
+            get { return int.Parse(addProductInv.Text); }
+            set { addProductInv.Text = value.ToString(); }
+        }
+
+        public decimal addProdPriceBox
+        {
+            get { return decimal.Parse(addProductPrice.Text); }
+            set { addProductPrice.Text = value.ToString(); }
+        }
+
+        public int addProdMinBox
+        {
+            get { return int.Parse(addProductMin.Text); }
+            set { addProductMin.Text = value.ToString(); }
+        }
+
+        public int addProdMaxBox
+        {
+            get { return int.Parse(addProductMax.Text); }
+            set { addProductMax.Text = value.ToString(); }
+        }
     }
 }

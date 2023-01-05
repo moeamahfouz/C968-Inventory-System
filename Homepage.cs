@@ -61,12 +61,12 @@ namespace Mohamed_Mahfouz_Inventory_System
         {
             if (partsTable.CurrentRow.DataBoundItem.GetType() == typeof(Mohamed_Mahfouz_Inventory_System.InHouse))
             {
-                InHouse inHousePart = (InHouse)partsTable.CurrentRow.DataBoundItem;
+                InHouse inHousePart = (InHouse) partsTable.CurrentRow.DataBoundItem;
                 new modParts(inHousePart).ShowDialog();
             }
             else
             {
-                Outsourced outSourcedPart = (Outsourced)partsTable.CurrentRow.DataBoundItem;
+                Outsourced outSourcedPart = (Outsourced) partsTable.CurrentRow.DataBoundItem;
                 new modParts(outSourcedPart).ShowDialog();
             }
         }
@@ -91,7 +91,7 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         }
 
-        private void addProdHome_Click(object sender, EventArgs e) //Launches the add product page
+        private void addProdHome_Click(object sender, EventArgs e) //Opens the add product page
         {
             Product highlightedProduct = (Product)prodTable.CurrentRow.DataBoundItem;
             new AddProduct().ShowDialog();
@@ -99,10 +99,10 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void searchParts_Click(object sender, EventArgs e) //Gives search part bar functionality
         {
-            if (searchPartsText < 1)
+            if (searchPartsBox < 1)
                 return;
 
-            Part searchResultPart = Inventory.LookupPart(searchPartsText);
+            Part searchResultPart = Inventory.LookupPart(searchPartsBox);
 
             foreach (DataGridViewRow row in partsTable.Rows)
             {
@@ -170,10 +170,10 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void searchProd_Click(object sender, EventArgs e) //Gives search product bar functionality
         {
-            if (searchProdText < 1)
+            if (searchProdBox < 1)
                 return;
 
-            Product searchResultProduct = Inventory.LookupProduct(searchProdText);
+            Product searchResultProduct = Inventory.LookupProduct(searchProdBox);
 
             foreach (DataGridViewRow row in prodTable.Rows)
             {

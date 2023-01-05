@@ -271,8 +271,8 @@
         #endregion
 
         private Button addPartsHome;
-        private DataGridView partsTable;
-        private DataGridView prodTable;
+        public DataGridView partsTable;
+        public DataGridView prodTable;
         private Label label1;
         private Label label2;
         private Button modPartsHome;
@@ -287,5 +287,17 @@
         private TextBox searchProdText;
         private Label label3;
         private Label label4;
+
+        public int searchPartsBox
+        {
+            get { return int.Parse(searchPartsText.Text); }
+            set { searchPartsText.Text = value.ToString(); }
+        }
+
+        public int searchProdBox
+        {
+            get { return int.Parse(searchProdText.Text); }
+            set { searchProdText.Text = value.ToString(); }
+        }
     }
 }

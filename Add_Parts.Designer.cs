@@ -303,5 +303,49 @@
         private TextBox addPartsMax;
         private Button addPartsSave;
         private Button addPartsCancel;
+
+
+        //Getters and setters for converting values
+        public int addPartsIDBox
+        {
+            get { return int.Parse(addPartsID.Text); }
+            set { addPartsID.Text = value.ToString(); }
+        }
+
+        public string addPartsNameBox
+        {
+            get { return addPartsName.Text; }
+            set { addPartsName.Text = value; }
+        }
+
+        public int addPartsInvBox
+        {
+            get { return int.Parse(addPartsInv.Text); }
+            set { addPartsInv.Text = value.ToString(); }
+        }
+
+        public decimal addPartsPriceBox
+        {
+            get { return decimal.Parse(addPartsPrice.Text); }
+            set { addPartsPrice.Text = value.ToString(); }
+        }
+
+        public int addPartsMinBox
+        {
+            get { return int.Parse(addPartsMin.Text); }
+            set { addPartsMin.Text = value.ToString(); }
+        }
+
+        public int addPartsMaxBox
+        {
+            get { return int.Parse(addPartsMax.Text); }
+            set { addPartsMax.Text = value.ToString(); }
+        }
+
+        public string addPartsMachIDBox
+        {
+            get { return addPartsMachID.Text; }
+            set { addPartsMachID.Text = value; }
+        }
     }
 }

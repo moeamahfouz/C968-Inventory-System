@@ -301,5 +301,47 @@
         private TextBox modPartsMachID;
         private Button modPartsSave;
         private Button modPartsCancel;
+
+        public int modPartsIDBox
+        {
+            get { return int.Parse(modPartsID.Text); }
+            set { modPartsID.Text = value.ToString(); }
+        }
+
+        public string modPartsNameBox
+        {
+            get { return modPartsName.Text; }
+            set { modPartsName.Text = value; }
+        }
+
+        public int modPartsInvBox
+        {
+            get { return int.Parse(modPartsInv.Text); }
+            set { modPartsInv.Text = value.ToString(); }
+        }
+
+        public decimal modPartsPriceBox
+        {
+            get { return decimal.Parse(modPartsPrice.Text); }
+            set { modPartsPrice.Text = value.ToString(); }
+        }
+
+        public int modPartsMinBox
+        {
+            get { return int.Parse(modPartsMin.Text); }
+            set { modPartsMin.Text = value.ToString(); }
+        }
+
+        public int modPartsMaxBox
+        {
+            get { return int.Parse(modPartsMax.Text); }
+            set { modPartsMax.Text = value.ToString(); }
+        }
+
+        public string modPartsMachIDBox
+        {
+            get { return modPartsMachID.Text; }
+            set { modPartsMachID.Text = value; }
+        }
     }
 }

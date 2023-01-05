@@ -97,18 +97,18 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void addProdSave_Click(object sender, EventArgs e) //Checks for user error in field inputs
         {
-            if (addProductMax < addProductMin)
+            if (addProdMaxBox < addProdMinBox)
             {
                 MessageBox.Show("Error: Maximum value must be higher than minimum value.");
                 return;
             }
 
-            if ((addProductInv < addProductMin) || (addProductInv > addProductMax))
+            if ((addProdInvBox < addProdMinBox) || (addProdInvBox > addProdMaxBox))
             {
                 MessageBox.Show("Error: Inventory field must contain value between minimum and maximum values.");
             }
 
-            Product addProduct = new Product((Inventory.Products.Count + 1), addProductName, addProductInv, addProductPrice, addProductMin, addProductMax);
+            Product addProduct = new Product((Inventory.Products.Count + 1), addProdNameBox, addProdInvBox, addProdPriceBox, addProdMinBox, addProdMaxBox);
             Inventory.AddProduct(addProduct);
 
             foreach (Part part in addParts)

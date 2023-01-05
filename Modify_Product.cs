@@ -14,7 +14,7 @@ namespace Mohamed_Mahfouz_Inventory_System
     public partial class ModProduct : Form
     {
         BindingList<Part> addParts = new BindingList<Part>();
-        Homepage homePage = (Homepage)Application.OpenForms["Homepage"];
+        Homepage homePage = (Homepage) Application.OpenForms["Homepage"];
 
         public ModProduct(Product product)
         {
@@ -24,12 +24,12 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         public void ModProductInitialize(Product highlightedProduct) //Sets up the modify product page tables
         {
-            modProductID = highlightedProduct.prodID;
-            modProductName = highlightedProduct.prodName;
-            modProductInv = highlightedProduct.prodInv;
-            modProductPrice = decimal.Parse(highlightedProduct.prodPrice.Substring(1));
-            modProductMin = highlightedProduct.prodMin;
-            modProductMax = highlightedProduct.prodMax;
+            modProdIDBox = highlightedProduct.prodID;
+            modProdNameBox = highlightedProduct.prodName;
+            modProdInvBox = highlightedProduct.prodInv;
+            modProdPriceBox = (int)decimal.Parse(highlightedProduct.prodPrice.Substring(1));
+            modProdMinBox = highlightedProduct.prodMin;
+            modProdMaxBox = highlightedProduct.prodMax;
 
             var firstSource = new BindingSource();
             firstSource.DataSource = Inventory.Parts;
@@ -61,25 +61,25 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void modProdSave_Click(object sender, EventArgs e) //Checks for user error in field inputs
         {
-            if (modProductMax < modProductMin)
+            if (modProdMaxBox < modProdMinBox)
             {
                 MessageBox.Show("Error: Maximum value must be higher than minimum value.");
                 return;
             }
 
-            if ((modProductInv < modProductMin) || (modProductInv > modProductMax))
+            if ((modProdInvBox < modProdMinBox) || (modProdInvBox > modProdMaxBox))
             {
                 MessageBox.Show("Error: Inventory field must contain value between minimum and maximum values.");
             }
 
-            Product savedProdChanges = new Product(modProductID, modProductName, modProductInv, modProductPrice, modProductMin, modProductMax);
+            Product savedProdChanges = new Product(modProdIDBox, modProdNameBox, modProdInvBox, modProdPriceBox, modProdMinBox, modProdMaxBox);
 
             foreach (Part part in addParts)
             {
                 savedProdChanges.AddAssociatedPart(part);
             }
 
-            Inventory.UpdateProduct(modProductID, savedProdChanges);
+            Inventory.UpdateProduct(modProdIDBox, savedProdChanges);
             this.Close();
 
             homePage.prodTable.Update();
@@ -119,7 +119,7 @@ namespace Mohamed_Mahfouz_Inventory_System
         {
             Part highlightedPart = (Part)modPartsAssocTable.CurrentRow.DataBoundItem;
 
-            int delByID = this.modProductID;
+            int delByID = this.modProdIDBox;
             Product highlightedProduct = Inventory.LookupProduct(delByID);
             highlightedProduct.RemoveAssociatedPart(highlightedPart.partID);
 
