@@ -25,7 +25,7 @@ namespace Mohamed_Mahfouz_Inventory_System
             get { return PartPrice.ToString("C"); }
             set
             {
-                if (value.EndsWith(" Dubloons"))
+                if (value.StartsWith("$"))
                 {
                     PartPrice = decimal.Parse(value.Substring(1));
                 }

@@ -116,6 +116,7 @@
             this.modPartsHome.TabIndex = 7;
             this.modPartsHome.Text = "Modify";
             this.modPartsHome.UseVisualStyleBackColor = false;
+            this.modPartsHome.Click += new System.EventHandler(this.modPartsHome_Click);
             // 
             // delPartsHome
             // 
@@ -127,6 +128,7 @@
             this.delPartsHome.TabIndex = 8;
             this.delPartsHome.Text = "Delete";
             this.delPartsHome.UseVisualStyleBackColor = false;
+            this.delPartsHome.Click += new System.EventHandler(this.delPartsHome_Click);
             // 
             // addProdHome
             // 
@@ -138,6 +140,7 @@
             this.addProdHome.TabIndex = 9;
             this.addProdHome.Text = "Add";
             this.addProdHome.UseVisualStyleBackColor = false;
+            this.addProdHome.Click += new System.EventHandler(this.addProdHome_Click);
             // 
             // modProdHome
             // 
@@ -149,6 +152,8 @@
             this.modProdHome.TabIndex = 10;
             this.modProdHome.Text = "Modify";
             this.modProdHome.UseVisualStyleBackColor = false;
+            this.modProdHome.Click += new System.EventHandler(this.modProdHome_Click);
+
             // 
             // delProdHome
             // 
@@ -160,6 +165,8 @@
             this.delProdHome.TabIndex = 11;
             this.delProdHome.Text = "Delete";
             this.delProdHome.UseVisualStyleBackColor = false;
+            this.delProdHome.Click += new System.EventHandler(this.delProdHome_Click);
+
             // 
             // exit
             // 
@@ -171,6 +178,8 @@
             this.exit.TabIndex = 12;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+
             // 
             // searchParts
             // 
@@ -182,6 +191,7 @@
             this.searchParts.TabIndex = 13;
             this.searchParts.Text = "Search";
             this.searchParts.UseVisualStyleBackColor = false;
+            this.searchParts.Click += new System.EventHandler(this.searchParts_Click);
             // 
             // searchProd
             // 
@@ -193,6 +203,8 @@
             this.searchProd.TabIndex = 14;
             this.searchProd.Text = "Search";
             this.searchProd.UseVisualStyleBackColor = false;
+            this.searchProd.Click += new System.EventHandler(this.searchProd_Click);
+
             // 
             // searchPartsText
             // 
@@ -267,6 +279,7 @@
             this.PerformLayout();
 
         }
+
 
         #endregion
 

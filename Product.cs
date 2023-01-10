@@ -29,7 +29,7 @@ namespace Mohamed_Mahfouz_Inventory_System
             get { return ProdPrice.ToString("C"); }
             set
             {
-                if (value.EndsWith(" Dubloons"))
+                if (value.StartsWith("$"))
                 {
                     ProdPrice = decimal.Parse(value.Substring(1));
                 }

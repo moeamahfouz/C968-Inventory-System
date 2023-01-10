@@ -17,17 +17,17 @@ namespace Mohamed_Mahfouz_Inventory_System
         public AddProduct()
         {
             InitializeComponent();
-            ProdAddLoad();
+            AddProdLoad();
         }
 
-        public void ProdAddLoad()
+        public void AddProdLoad()
         {
             var firstSource = new BindingSource();
             firstSource.DataSource = Inventory.Parts;
             addCandPartsTable.DataSource = firstSource;
             addCandPartsTable.Columns["PartID"].HeaderText = "Part ID";
             addCandPartsTable.Columns["PartName"].HeaderText = "Part Name";
-            addCandPartsTable.Columns["PartInStock"].HeaderText = "Inventory";
+            addCandPartsTable.Columns["PartInv"].HeaderText = "Inventory";
             addCandPartsTable.Columns["PartPrice"].HeaderText = "Price";
             addCandPartsTable.Columns["PartMin"].HeaderText = "Min";
             addCandPartsTable.Columns["PartMax"].HeaderText = "Max";
@@ -38,7 +38,7 @@ namespace Mohamed_Mahfouz_Inventory_System
             addPartsAssocTable.DataSource = secondSource;
             addPartsAssocTable.Columns["PartID"].HeaderText = "Part ID";
             addPartsAssocTable.Columns["PartName"].HeaderText = "Part Name";
-            addPartsAssocTable.Columns["PartInStock"].HeaderText = "Inventory";
+            addPartsAssocTable.Columns["PartInv"].HeaderText = "Inventory";
             addPartsAssocTable.Columns["PartPrice"].HeaderText = "Price";
             addPartsAssocTable.Columns["PartMin"].HeaderText = "Min";
             addPartsAssocTable.Columns["PartMax"].HeaderText = "Max";

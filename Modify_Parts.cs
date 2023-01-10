@@ -49,7 +49,7 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         }
 
-        private void SaveModPart_Click(object sender, EventArgs e) //Save function checks for errors from user input into inventory fields
+        private void modPartsSave_Click(object sender, EventArgs e) //Save function checks for errors from user input into inventory fields
         {
             if (modPartsMaxBox < modPartsMinBox)
             {

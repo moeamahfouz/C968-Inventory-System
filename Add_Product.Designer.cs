@@ -235,6 +235,7 @@
             this.addCandPartsAdd.TabIndex = 33;
             this.addCandPartsAdd.Text = "Add";
             this.addCandPartsAdd.UseVisualStyleBackColor = true;
+            this.addCandPartsAdd.Click += new System.EventHandler(this.addCandPartsAdd_Click);
             // 
             // addPartsAssocDel
             // 
@@ -244,6 +245,7 @@
             this.addPartsAssocDel.TabIndex = 34;
             this.addPartsAssocDel.Text = "Delete";
             this.addPartsAssocDel.UseVisualStyleBackColor = true;
+            this.addPartsAssocDel.Click += new System.EventHandler(this.addPartsAssocDel_Click);
             // 
             // addProdSearch
             // 
@@ -261,6 +263,7 @@
             this.addSearchButton.TabIndex = 36;
             this.addSearchButton.Text = "Search";
             this.addSearchButton.UseVisualStyleBackColor = true;
+            this.addSearchButton.Click += new System.EventHandler(this.addSearchButton_Click);
             // 
             // addProdCancel
             // 
@@ -270,6 +273,7 @@
             this.addProdCancel.TabIndex = 37;
             this.addProdCancel.Text = "Cancel";
             this.addProdCancel.UseVisualStyleBackColor = true;
+            this.addProdCancel.Click += new System.EventHandler(this.addProdCancel_Click);
             // 
             // addProdSave
             // 
@@ -279,6 +283,7 @@
             this.addProdSave.TabIndex = 38;
             this.addProdSave.Text = "Save";
             this.addProdSave.UseVisualStyleBackColor = true;
+            this.addProdSave.Click += new System.EventHandler(this.addProdSave_Click);
             // 
             // AddProduct
             // 

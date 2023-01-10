@@ -49,7 +49,7 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void addPartsHome_Click(object sender, EventArgs e) //Opens Add Part page
@@ -161,12 +161,6 @@ namespace Mohamed_Mahfouz_Inventory_System
             }
         }
 
-        private void exit_Click(object sender, EventArgs e) //Exit function
-        {
-            this.Close();
-        }
-
-
 
         private void searchProd_Click(object sender, EventArgs e) //Gives search product bar functionality
         {
@@ -197,6 +191,11 @@ namespace Mohamed_Mahfouz_Inventory_System
             {
                 e.Handled = true;
             }
+        }
+
+        private void exit_Click(object sender, EventArgs e) //Exit function
+        {
+            this.Close();
         }
 
     }

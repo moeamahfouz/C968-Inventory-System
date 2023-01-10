@@ -72,6 +72,7 @@
             this.modInHouse.TabStop = true;
             this.modInHouse.Text = "In-House";
             this.modInHouse.UseVisualStyleBackColor = true;
+            this.modInHouse.CheckedChanged += new System.EventHandler(this.modInHouse_CheckedChanged);
             // 
             // modOutsourced
             // 
@@ -85,6 +86,7 @@
             this.modOutsourced.TabStop = true;
             this.modOutsourced.Text = "Outsourced";
             this.modOutsourced.UseVisualStyleBackColor = true;
+            this.modOutsourced.CheckedChanged += new System.EventHandler(this.modOutsourced_CheckedChanged);
             // 
             // label2
             // 
@@ -236,6 +238,7 @@
             this.modPartsSave.TabIndex = 21;
             this.modPartsSave.Text = "Save";
             this.modPartsSave.UseVisualStyleBackColor = false;
+            this.modPartsSave.Click += new System.EventHandler(this.modPartsSave_Click);
             // 
             // modPartsCancel
             // 
@@ -246,6 +249,7 @@
             this.modPartsCancel.TabIndex = 22;
             this.modPartsCancel.Text = "Cancel";
             this.modPartsCancel.UseVisualStyleBackColor = true;
+            this.modPartsCancel.Click += new System.EventHandler(this.modPartsCancel_Click);
             // 
             // modParts
             // 

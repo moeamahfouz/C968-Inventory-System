@@ -12,9 +12,8 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         public int machineID { get; set; }
 
-        public InHouse(int v, TextBox addPartsName)
+        public InHouse()
         {
-
         }
 
         public InHouse(int ID, TextBox addPartsName, string Name, int Inventory, decimal Price, int Min, int Max) //Constructor not including Machine ID
@@ -38,8 +37,6 @@ namespace Mohamed_Mahfouz_Inventory_System
             machineID = MachineID;
         }
 
-        public InHouse()
-        {
-        }
+
     }
 }

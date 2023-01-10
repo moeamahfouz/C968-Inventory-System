@@ -213,6 +213,7 @@
             this.modCandPartsAdd.TabIndex = 41;
             this.modCandPartsAdd.Text = "Add";
             this.modCandPartsAdd.UseVisualStyleBackColor = true;
+            this.modCandPartsAdd.Click += new System.EventHandler(this.modCandPartsAdd_Click);
             // 
             // modPartsAssocTable
             // 
@@ -233,6 +234,7 @@
             this.modPartsAssocDel.TabIndex = 43;
             this.modPartsAssocDel.Text = "Delete";
             this.modPartsAssocDel.UseVisualStyleBackColor = true;
+            this.modPartsAssocDel.Click += new System.EventHandler(this.modPartsAssocDel_Click);
             // 
             // modProdSave
             // 
@@ -242,6 +244,7 @@
             this.modProdSave.TabIndex = 44;
             this.modProdSave.Text = "Save";
             this.modProdSave.UseVisualStyleBackColor = true;
+            this.modProdSave.Click += new System.EventHandler(this.modProdSave_Click);
             // 
             // modProdCancel
             // 
@@ -251,6 +254,7 @@
             this.modProdCancel.TabIndex = 45;
             this.modProdCancel.Text = "Cancel";
             this.modProdCancel.UseVisualStyleBackColor = true;
+            this.modProdCancel.Click += new System.EventHandler(this.modProdCancel_Click);
             // 
             // label9
             // 
@@ -278,6 +282,7 @@
             this.modSearchButton.TabIndex = 48;
             this.modSearchButton.Text = "Search";
             this.modSearchButton.UseVisualStyleBackColor = true;
+            this.modSearchButton.Click += new System.EventHandler(this.modSearchButton_Click);
             // 
             // ModProduct
             // 
