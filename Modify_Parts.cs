@@ -27,6 +27,8 @@ namespace Mohamed_Mahfouz_Inventory_System
             modPartsMinBox = inHousePart.partMin;
             modPartsMaxBox = inHousePart.partMax;
             modPartsMachIDBox = inHousePart.machineID.ToString();
+
+            modInHouse.Checked = true;
         }
 
         public modParts(Outsourced outsourcedPart) //Sets values to public variables to be set to data grid if outsourced part
@@ -49,7 +51,7 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         }
 
-        private void modPartsSave_Click(object sender, EventArgs e) //Save function checks for errors from user input into inventory fields
+        private void modPartsSave_Click(object sender, EventArgs e) //Save function checks for errors from user input into text fields
         {
             if (modPartsMaxBox < modPartsMinBox)
             {
@@ -68,7 +70,8 @@ namespace Mohamed_Mahfouz_Inventory_System
                 Inventory.UpdateInhousePart(modPartsIDBox, inHousePart);
                 modInHouse.Checked = true;
             }
-            else
+            
+            if (modOutsourced.Checked)
             {
                 Outsourced outSourcedPart = new Outsourced(modPartsIDBox, modPartsNameBox, modPartsInvBox, modPartsPriceBox, modPartsMinBox, modPartsMaxBox, modPartsMachIDBox);
                 Inventory.UpdateOutsourcedPart(modPartsIDBox, outSourcedPart);
@@ -121,7 +124,7 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void modPartsPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar))) //Only allows numeric values to be entered into field
+            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar)) && e.KeyChar != '.') //Only allows numeric values to be entered into field
             {
                 e.Handled = true;
             }

@@ -173,6 +173,7 @@
             this.modPartsID.Name = "modPartsID";
             this.modPartsID.Size = new System.Drawing.Size(203, 39);
             this.modPartsID.TabIndex = 14;
+            this.modPartsID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modPartsID_KeyPress);
             // 
             // modPartsName
             // 
@@ -191,6 +192,7 @@
             this.modPartsInv.Name = "modPartsInv";
             this.modPartsInv.Size = new System.Drawing.Size(203, 39);
             this.modPartsInv.TabIndex = 16;
+            this.modPartsInv.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modPartsInv_KeyPress);
             // 
             // modPartsPrice
             // 
@@ -200,6 +202,7 @@
             this.modPartsPrice.Name = "modPartsPrice";
             this.modPartsPrice.Size = new System.Drawing.Size(203, 39);
             this.modPartsPrice.TabIndex = 17;
+            this.modPartsPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modPartsPrice_KeyPress);
             // 
             // modPartsMin
             // 
@@ -209,6 +212,7 @@
             this.modPartsMin.Name = "modPartsMin";
             this.modPartsMin.Size = new System.Drawing.Size(132, 39);
             this.modPartsMin.TabIndex = 18;
+            this.modPartsMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modPartsMin_KeyPress);
             // 
             // modPartsMax
             // 
@@ -218,6 +222,7 @@
             this.modPartsMax.Name = "modPartsMax";
             this.modPartsMax.Size = new System.Drawing.Size(132, 39);
             this.modPartsMax.TabIndex = 19;
+            this.modPartsMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modPartsMax_KeyPress);
             // 
             // modPartsMachID
             // 
@@ -227,6 +232,7 @@
             this.modPartsMachID.Name = "modPartsMachID";
             this.modPartsMachID.Size = new System.Drawing.Size(203, 39);
             this.modPartsMachID.TabIndex = 20;
+            this.modPartsMachID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modPartsMachID_KeyPress);
             // 
             // modPartsSave
             // 

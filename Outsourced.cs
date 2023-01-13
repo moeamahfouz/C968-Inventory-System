@@ -32,5 +32,6 @@
                 partMax = Max;
                 compName = Company;
             }
+
     }
 }

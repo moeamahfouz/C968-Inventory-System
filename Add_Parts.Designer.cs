@@ -72,6 +72,8 @@
             this.addInHouse.TabStop = true;
             this.addInHouse.Text = "In-House";
             this.addInHouse.UseVisualStyleBackColor = true;
+            this.addInHouse.CheckedChanged += new System.EventHandler(this.addInHouse_CheckedChanged);
+
             // 
             // addOutsourced
             // 
@@ -85,6 +87,8 @@
             this.addOutsourced.TabStop = true;
             this.addOutsourced.Text = "Outsourced";
             this.addOutsourced.UseVisualStyleBackColor = true;
+            this.addOutsourced.CheckedChanged += new System.EventHandler(this.addOutsourced_CheckedChanged);
+
             // 
             // label2
             // 
@@ -173,6 +177,7 @@
             this.addPartsPrice.Name = "addPartsPrice";
             this.addPartsPrice.Size = new System.Drawing.Size(203, 39);
             this.addPartsPrice.TabIndex = 10;
+            this.addPartsPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addPartsPrice_KeyPress);
             // 
             // addPartsInv
             // 
@@ -182,6 +187,7 @@
             this.addPartsInv.Name = "addPartsInv";
             this.addPartsInv.Size = new System.Drawing.Size(203, 39);
             this.addPartsInv.TabIndex = 11;
+            this.addPartsInv.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addPartsInv_KeyPress);
             // 
             // addPartsName
             // 
@@ -200,6 +206,8 @@
             this.addPartsID.Name = "addPartsID";
             this.addPartsID.Size = new System.Drawing.Size(203, 39);
             this.addPartsID.TabIndex = 13;
+            this.addPartsID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addPartsID_KeyPress);
+
             // 
             // addPartsMachID
             // 
@@ -209,6 +217,7 @@
             this.addPartsMachID.Name = "addPartsMachID";
             this.addPartsMachID.Size = new System.Drawing.Size(203, 39);
             this.addPartsMachID.TabIndex = 14;
+            this.addPartsMachID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addPartsMachID_KeyPress);
             // 
             // addPartsMin
             // 
@@ -218,6 +227,7 @@
             this.addPartsMin.Name = "addPartsMin";
             this.addPartsMin.Size = new System.Drawing.Size(132, 39);
             this.addPartsMin.TabIndex = 16;
+            this.addPartsMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addPartsMin_KeyPress);
             // 
             // addPartsMax
             // 
@@ -227,6 +237,8 @@
             this.addPartsMax.Name = "addPartsMax";
             this.addPartsMax.Size = new System.Drawing.Size(132, 39);
             this.addPartsMax.TabIndex = 17;
+            this.addPartsMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addPartsMax_KeyPress);
+
             // 
             // addPartsSave
             // 
@@ -238,6 +250,7 @@
             this.addPartsSave.TabIndex = 18;
             this.addPartsSave.Text = "Save";
             this.addPartsSave.UseVisualStyleBackColor = false;
+            this.addPartsSave.Click += new System.EventHandler(this.addPartsSave_Click);
             // 
             // addPartsCancel
             // 
@@ -248,6 +261,7 @@
             this.addPartsCancel.TabIndex = 19;
             this.addPartsCancel.Text = "Cancel";
             this.addPartsCancel.UseVisualStyleBackColor = true;
+            this.addPartsCancel.Click += new System.EventHandler(this.addPartsCancel_Click);
             // 
             // addParts
             // 

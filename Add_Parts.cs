@@ -32,9 +32,14 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         }
 
-        private void AddOutsourced_CheckedChanged(object sender, EventArgs e) //Changes Machine ID label to Company Name when Outsourced radio button is clicked
+        private void addOutsourced_CheckedChanged(object sender, EventArgs e) //Changes Machine ID label to Company Name when Outsourced radio button is clicked
         {
             AddMacID.Text = "Company Name";
+        }
+
+        private void addInHouse_CheckedChanged(object sender, EventArgs e) //Sets Machine ID to last text box if in house radio is checked
+        {
+            AddMacID.Text = "Machine ID";
         }
 
         private void addPartsSave_Click(object sender, EventArgs e) //Save function checks for errors from user input into inventory fields
@@ -54,11 +59,14 @@ namespace Mohamed_Mahfouz_Inventory_System
             {
                 InHouse inHouse = new InHouse((Inventory.Parts.Count + 1), addPartsNameBox, addPartsInvBox, addPartsPriceBox, addPartsMinBox, addPartsMaxBox, int.Parse(addPartsMachIDBox));
                 Inventory.AddPart(inHouse);
+                addInHouse.Checked = true;
             }
-            else
+            
+            if (addOutsourced.Checked)
             {
                 Outsourced outSourced = new Outsourced((Inventory.Parts.Count + 1), addPartsNameBox, addPartsInvBox, addPartsPriceBox, addPartsMinBox, addPartsMaxBox, addPartsMachIDBox);
                 Inventory.AddPart(outSourced);
+                addOutsourced.Checked = true;
             }
         }
 
@@ -80,7 +88,7 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void addPartsPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar))) //Does not allow non-numeric characters into ID field
+            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar)) && e.KeyChar != '.') //Does not allow non-numeric characters into ID field
             {
                 e.Handled = true;
             }

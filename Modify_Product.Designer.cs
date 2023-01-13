@@ -140,6 +140,7 @@
             this.modProductID.Name = "modProductID";
             this.modProductID.Size = new System.Drawing.Size(110, 23);
             this.modProductID.TabIndex = 27;
+            this.modProductID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modProductID_KeyPress);
             // 
             // modProductName
             // 
@@ -158,6 +159,7 @@
             this.modProductInv.Name = "modProductInv";
             this.modProductInv.Size = new System.Drawing.Size(110, 23);
             this.modProductInv.TabIndex = 29;
+            this.modProductInv.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modProductInv_KeyPress);
             // 
             // modProductPrice
             // 
@@ -167,6 +169,7 @@
             this.modProductPrice.Name = "modProductPrice";
             this.modProductPrice.Size = new System.Drawing.Size(110, 23);
             this.modProductPrice.TabIndex = 30;
+            this.modProductPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modProductPrice_KeyPress);
             // 
             // modProductMin
             // 
@@ -175,6 +178,7 @@
             this.modProductMin.Name = "modProductMin";
             this.modProductMin.Size = new System.Drawing.Size(72, 23);
             this.modProductMin.TabIndex = 31;
+            this.modProductMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modProductMin_KeyPress);
             // 
             // modProductMax
             // 
@@ -183,6 +187,7 @@
             this.modProductMax.Name = "modProductMax";
             this.modProductMax.Size = new System.Drawing.Size(72, 23);
             this.modProductMax.TabIndex = 32;
+            this.modProductMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modProductMax_KeyPress);
             // 
             // modCandPartsTable
             // 
@@ -273,6 +278,7 @@
             this.modProdSearch.Name = "modProdSearch";
             this.modProdSearch.Size = new System.Drawing.Size(189, 23);
             this.modProdSearch.TabIndex = 47;
+            this.modProdSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.modProdSearch_KeyPress);
             // 
             // modSearchButton
             // 

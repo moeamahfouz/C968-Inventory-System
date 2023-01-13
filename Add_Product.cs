@@ -143,7 +143,7 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void addProductPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar))) //Only allows numeric inputs into field
+            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar)) && e.KeyChar != '.') //Only allows numeric inputs into field
             {
                 e.Handled = true;
             }

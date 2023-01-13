@@ -37,6 +37,5 @@ namespace Mohamed_Mahfouz_Inventory_System
             machineID = MachineID;
         }
 
-
     }
 }

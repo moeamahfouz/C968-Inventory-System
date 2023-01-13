@@ -122,11 +122,12 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void searchPartsText_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar))) //Does not allow non numeric characters into search field
+        if ((!char.IsNumber(e.KeyChar)) && (!char.IsControl(e.KeyChar))) //Does not allow non numeric characters into search field
             {
-                e.Handled = true;
+          e.Handled = true;
             }
         }
+
 
         private void modProdHome_Click(object sender, EventArgs e) //Opens Modify Product page
         {

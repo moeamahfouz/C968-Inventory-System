@@ -214,6 +214,7 @@
             this.searchPartsText.Name = "searchPartsText";
             this.searchPartsText.Size = new System.Drawing.Size(243, 23);
             this.searchPartsText.TabIndex = 15;
+            this.searchPartsText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchPartsText_KeyPress);
             // 
             // searchProdText
             // 
@@ -223,6 +224,7 @@
             this.searchProdText.Name = "searchProdText";
             this.searchProdText.Size = new System.Drawing.Size(243, 23);
             this.searchProdText.TabIndex = 16;
+            this.searchProdText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchProdText_KeyPress);
             // 
             // label3
             // 

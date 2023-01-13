@@ -141,6 +141,7 @@
             this.addProductID.Name = "addProductID";
             this.addProductID.Size = new System.Drawing.Size(110, 23);
             this.addProductID.TabIndex = 23;
+            this.addProductID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addProductID_KeyPress);
             // 
             // addProductName
             // 
@@ -159,6 +160,7 @@
             this.addProductInv.Name = "addProductInv";
             this.addProductInv.Size = new System.Drawing.Size(110, 23);
             this.addProductInv.TabIndex = 25;
+            this.addProductInv.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addProductInv_KeyPress);
             // 
             // addProductPrice
             // 
@@ -168,6 +170,7 @@
             this.addProductPrice.Name = "addProductPrice";
             this.addProductPrice.Size = new System.Drawing.Size(110, 23);
             this.addProductPrice.TabIndex = 26;
+            this.addProductPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addProductPrice_KeyPress);
             // 
             // addProductMin
             // 
@@ -176,6 +179,7 @@
             this.addProductMin.Name = "addProductMin";
             this.addProductMin.Size = new System.Drawing.Size(72, 23);
             this.addProductMin.TabIndex = 27;
+            this.addProductMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addProductMin_KeyPress);
             // 
             // addProductMax
             // 
@@ -184,6 +188,8 @@
             this.addProductMax.Name = "addProductMax";
             this.addProductMax.Size = new System.Drawing.Size(72, 23);
             this.addProductMax.TabIndex = 28;
+            this.addProductMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addProductMax_KeyPress);
+
             // 
             // addCandPartsTable
             // 
@@ -254,6 +260,7 @@
             this.addProdSearch.Name = "addProdSearch";
             this.addProdSearch.Size = new System.Drawing.Size(189, 23);
             this.addProdSearch.TabIndex = 35;
+            this.addProdSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addProdSearch_KeyPress);
             // 
             // addSearchButton
             // 
