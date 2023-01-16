@@ -11,10 +11,11 @@ using static System.Windows.Forms.DataFormats;
 
 namespace Mohamed_Mahfouz_Inventory_System
 {
+
     public partial class modParts : Form
     {
-    
-        Homepage homePage = (Homepage) Application.OpenForms["Homepage"];
+
+        Homepage homePage = (Homepage)Application.OpenForms["Homepage"];
 
         public modParts(InHouse inHousePart) //Sets values to public variables to be set to table for in house parts
         {
@@ -46,13 +47,11 @@ namespace Mohamed_Mahfouz_Inventory_System
             modOutsourced.Checked = true;
         }
 
-        private void modParts_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void modPartsSave_Click(object sender, EventArgs e) //Save function checks for errors from user input into text fields
         {
+            
             if (modPartsMaxBox < modPartsMinBox)
             {
                 MessageBox.Show(" Maximum field must contain higher value than minimum field.");
@@ -77,8 +76,8 @@ namespace Mohamed_Mahfouz_Inventory_System
                 Inventory.UpdateOutsourcedPart(modPartsIDBox, outSourcedPart);
                 modOutsourced.Checked = true;
             }
-            this.Close();
 
+            this.Close();
             homePage.partsTable.Update();
             homePage.partsTable.Refresh();
         }

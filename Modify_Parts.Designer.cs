@@ -284,7 +284,6 @@
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "modParts";
             this.Text = "Inventory Management System";
-            this.Load += new System.EventHandler(this.modParts_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

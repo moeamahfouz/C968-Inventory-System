@@ -50,7 +50,9 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         }
 
-        public Product(int ID, string Name, int Inventory, decimal Price, int Min, int Max) 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        public Product(int ID, string Name, int Inventory, decimal Price, int Min, int Max)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
             prodID = ID;
             prodName = Name;

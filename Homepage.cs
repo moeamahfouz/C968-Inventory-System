@@ -51,7 +51,6 @@ namespace Mohamed_Mahfouz_Inventory_System
         {
           
         }
-
         private void addPartsHome_Click(object sender, EventArgs e) //Opens Add Part page
         {
             new addParts().ShowDialog();
@@ -99,11 +98,12 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void searchParts_Click(object sender, EventArgs e) //Gives search part bar functionality
         {
-            if (searchPartsBox < 1)
+            if ((searchPartsBox < 1) || (searchPartsBox > 5))
                 return;
 
             Part searchResultPart = Inventory.LookupPart(searchPartsBox);
 
+            
             foreach (DataGridViewRow row in partsTable.Rows)
             {
                 Part part = (Part)row.DataBoundItem;
@@ -113,6 +113,7 @@ namespace Mohamed_Mahfouz_Inventory_System
                     row.Selected = true;
                     break;
                 }
+
                 else
                 {
                     row.Selected = false;
@@ -165,7 +166,7 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         private void searchProd_Click(object sender, EventArgs e) //Gives search product bar functionality
         {
-            if (searchProdBox < 1)
+            if ((searchProdBox < 1) || (searchProdBox > 5))
                 return;
 
             Product searchResultProduct = Inventory.LookupProduct(searchProdBox);

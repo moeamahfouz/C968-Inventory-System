@@ -73,6 +73,7 @@ namespace Mohamed_Mahfouz_Inventory_System
                     row.Selected = true;
                     break;
                 }
+
                 else
                 {
                     row.Selected = false;
