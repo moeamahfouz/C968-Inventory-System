@@ -103,16 +103,17 @@ namespace Mohamed_Mahfouz_Inventory_System
             Parts.Add(part);
         }
 
-        public bool DeletePart(Part part) //Delete part method
+        public static bool DeletePart(int part) //Delete part method
         {
-            try
-            {
-                Parts.Remove(part);
-                return true;
-            }
-            catch
+            Part partToDelete = LookupPart(part);
+            if (partToDelete == null)
             {
                 return false;
+            }
+            else
+            {
+                Parts.Remove(partToDelete);
+                return true;
             }
         }
 
@@ -126,50 +127,14 @@ namespace Mohamed_Mahfouz_Inventory_System
                 }
             }
 
-            Part? noPart = null;
+            Part noPart = null;
             return noPart;
         }
 
-        public static void UpdateInhousePart(int partID, InHouse inhousePart) //Updates in house part after editing
+        public static void UpdatePart(int partID, Part part) //Updates part after editing
         {
-            for (int i = 0; i < Parts.Count; i++)
-            {
-                if (Parts[i].GetType() == typeof(Mohamed_Mahfouz_Inventory_System.InHouse))
-                {
-                    InHouse newInHouse = (InHouse)Parts[i];
-
-                    if (newInHouse.partID == partID)
-                    {
-                        newInHouse.partName = inhousePart.partName;
-                        newInHouse.partInv = inhousePart.partInv;
-                        newInHouse.partPrice = inhousePart.partPrice;
-                        newInHouse.partMin = inhousePart.partMin;
-                        newInHouse.partMax = inhousePart.partMax;
-                        newInHouse.machineID = inhousePart.machineID;
-                    }
-                }
-            }
-        }
-
-        public static void UpdateOutsourcedPart(int partID, Outsourced outsourcedPart) //Updates outsourced part after editing
-        {
-            for (int i = 0; i < Parts.Count; i++)
-            {
-                if (Parts[i].GetType() == typeof(Mohamed_Mahfouz_Inventory_System.Outsourced))
-                {
-                    Outsourced newOutsourced = (Outsourced)Parts[i];
-
-                    if (newOutsourced.partID == partID)
-                    {
-                        newOutsourced.partName = outsourcedPart.partName;
-                        newOutsourced.partInv = outsourcedPart.partInv;
-                        newOutsourced.partPrice = outsourcedPart.partPrice;
-                        newOutsourced.partMin = outsourcedPart.partMin;
-                        newOutsourced.partMax = outsourcedPart.partMax;
-                        newOutsourced.compName = outsourcedPart.compName;
-                    }
-                }
-            }
+            DeletePart(partID);
+            AddPart(part);
         }
     }
 }

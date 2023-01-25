@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.DataFormats;
-
 namespace Mohamed_Mahfouz_Inventory_System
 {
 
@@ -17,34 +15,40 @@ namespace Mohamed_Mahfouz_Inventory_System
 
         Homepage homePage = (Homepage)Application.OpenForms["Homepage"];
 
-        public modParts(InHouse inHousePart) //Sets values to public variables to be set to table for in house parts
+        public modParts(InHouse inhousePart) //Sets values to public variables to be set to table for in house parts
         {
             InitializeComponent();
 
-            modPartsIDBox = inHousePart.partID;
-            modPartsNameBox = inHousePart.partName;
-            modPartsInvBox = inHousePart.partInv;
-            modPartsPriceBox = Decimal.Parse(inHousePart.partPrice.Substring(1));
-            modPartsMinBox = inHousePart.partMin;
-            modPartsMaxBox = inHousePart.partMax;
-            modPartsMachIDBox = inHousePart.machineID.ToString();
+            {
+                modPartsIDBox = inhousePart.partID;
+                modPartsNameBox = inhousePart.partName;
+                modPartsInvBox = inhousePart.partInv;
+                modPartsPriceBox = Decimal.Parse(inhousePart.partPrice.Substring(1));
+                modPartsMinBox = inhousePart.partMin;
+                modPartsMaxBox = inhousePart.partMax;
+                modPartsMachIDBox = inhousePart.machineID.ToString();
 
-            modInHouse.Checked = true;
+                modInHouse.Checked = true;
+            }
+
         }
 
         public modParts(Outsourced outsourcedPart) //Sets values to public variables to be set to data grid if outsourced part
         {
             InitializeComponent();
 
-            modPartsIDBox = outsourcedPart.partID;
-            modPartsNameBox = outsourcedPart.partName;
-            modPartsInvBox = outsourcedPart.partInv;
-            modPartsPriceBox = Decimal.Parse(outsourcedPart.partPrice.Substring(1));
-            modPartsMinBox = outsourcedPart.partMin;
-            modPartsMaxBox = outsourcedPart.partMax;
-            modPartsMachIDBox = outsourcedPart.compName;
+            {
+                modPartsIDBox = outsourcedPart.partID;
+                modPartsNameBox = outsourcedPart.partName;
+                modPartsInvBox = outsourcedPart.partInv;
+                modPartsPriceBox = Decimal.Parse(outsourcedPart.partPrice.Substring(1));
+                modPartsMinBox = outsourcedPart.partMin;
+                modPartsMaxBox = outsourcedPart.partMax;
+                modPartsMachIDBox = outsourcedPart.compName;
 
-            modOutsourced.Checked = true;
+                modOutsourced.Checked = true;
+            }
+
         }
 
 
@@ -65,16 +69,19 @@ namespace Mohamed_Mahfouz_Inventory_System
 
             if (modInHouse.Checked)
             {
-                InHouse inHousePart = new InHouse(modPartsIDBox, modPartsNameBox, modPartsInvBox, modPartsPriceBox, modPartsMinBox, modPartsMaxBox, int.Parse(modPartsMachIDBox));
-                Inventory.UpdateInhousePart(modPartsIDBox, inHousePart);
+                InHouse inhousePart = new InHouse(modPartsIDBox, modPartsNameBox, modPartsInvBox, modPartsPriceBox, modPartsMinBox, modPartsMaxBox, int.Parse(modPartsMachIDBox));
+                Inventory.UpdatePart(modPartsIDBox, inhousePart);
                 modInHouse.Checked = true;
+                modOutsourced.Checked = false;
+
             }
-            
+
             if (modOutsourced.Checked)
             {
-                Outsourced outSourcedPart = new Outsourced(modPartsIDBox, modPartsNameBox, modPartsInvBox, modPartsPriceBox, modPartsMinBox, modPartsMaxBox, modPartsMachIDBox);
-                Inventory.UpdateOutsourcedPart(modPartsIDBox, outSourcedPart);
+                Outsourced outsourcedPart = new Outsourced(modPartsIDBox, modPartsNameBox, modPartsInvBox, modPartsPriceBox, modPartsMinBox, modPartsMaxBox, modPartsMachIDBox);
+                Inventory.UpdatePart(modPartsIDBox, outsourcedPart);
                 modOutsourced.Checked = true;
+                modInHouse.Checked = false;
             }
 
             this.Close();
